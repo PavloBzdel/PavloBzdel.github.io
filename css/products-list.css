@@ -1,0 +1,199 @@
+/* font-family: 'Noto Serif', serif;
+font-family: 'Roboto Condensed', sans-serif; */
+:root{
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --gray-color: #333333;
+    --hoverText-color: #868686;
+}
+/* Header */
+
+.nav__logo{
+    padding: 20px;
+}
+.dropDown__container{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.dropdown__text{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: var(--black-color);
+}
+.dropdown__text:hover{
+    color: var(--hoverText-color);
+}
+.button__drop__down{
+    padding-right: 20px;
+}
+.content__card{
+    padding: 30px;
+    margin-top: 105px;
+    text-align: center;
+}
+.card__title{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 25px 0 10px 0;
+}
+.card__text{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+.card__button{
+    padding-bottom: 95px;
+}
+.button__card, .content__button{
+    text-transform: uppercase;
+    border: none;
+    color: var(--white-color);
+    background-color: var(--gray-color);
+    padding: 10px 20px;
+}
+.button__card:hover, .content__button:hover{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: var(--black-color) solid 1px;
+    transition: 0.5s;
+}
+.info__paragraph{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+.input {
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+}
+.input:focus ~ label {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+.input:checked + p {
+    -webkit-line-clamp: unset;
+  }
+  
+.input:checked ~ label {
+    display: none;
+  }
+  label {
+    border-radius: 4px;
+    padding: 0.2em 0.6em;
+    background-color: var(--gray-color);
+    color: var(--white-color);
+    font-size: 0.8em;
+  }
+  label:hover{
+      background-color: var(--hoverText-color);
+      color: var(--black-color);
+      transition: 0.5s;
+  }
+.info__text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--black-color);
+    overflow: hidden;
+    text-overflow: scroll;
+}
+.content__info__container{
+    padding: 150px 0;
+}
+
+.images__product__list{
+    width: 270px;
+    height: 400px; 
+    object-fit: fill;
+  }
+/* media */
+@media(min-width: 341px) {
+    #drop__down__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .content__cards__container{
+        display: grid;
+        grid-template-rows: repeat();
+    }
+    .info__text{
+        display: none;
+    }
+    .info__icon__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+    }
+    .icon__text{
+        justify-self: center;
+        text-align: center;
+    }
+    .footer__info__cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 40px;
+    }
+}
+@media(min-width: 541px){
+    #drop__down__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .content__cards__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+    .info__text{
+        display: block;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .footer__info__cards{
+        grid-template-columns: 1fr 1fr;
+        padding-left: 40px;
+    }
+}
+@media(min-width: 1024px){
+    #drop__down__container{
+        display: flex;
+        flex-direction: row;
+    }
+    .content__cards__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        align-self: center;
+    }
+    .content__card__border{
+        border-bottom: var(--black-color)solid 1px;
+    }
+    .info__text{
+        display: block;
+        text-align: center;
+        width: 540px;
+        height: 240px;
+        padding-right: 103px;
+    }
+    .content__info__container{
+        display: flex;
+    }
+    .icon__text{
+        padding: 0 20px 20px 0;
+    }
+    .content__card:hover{
+        box-shadow: 10px 10px 10px var(--hoverText-color);
+        transition: 0.5s;
+    }
+    .content__button__container{
+        margin-top: 15px;
+    }
+    .footer__info__cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-left: 40px;
+    }
+}

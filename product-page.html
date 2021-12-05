@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OJJO</title>
+    <title>Product-page</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/product-page.css">
+    <link rel="stylesheet" href="css/products-list.css">
 </head>
 
 <body>
@@ -57,7 +59,7 @@
                         <i class="closeIcon material-icons">close</i>
                     </i>
                 </div>
-                <div class="nav__menu__container" id="navbarNav">
+                <div class="nav__menu__container">
                     <div class="nav__menu__icon">
                         <img class="nav__menu__icon menu__icon" src="img/header/icon/icon-search.png" alt="search icon">
                         <a class="nav__menu__text">Поиск</a>
@@ -66,11 +68,10 @@
                         <a id="myBtn" class="nav__menu__text">Регистрация</a>
                     </div>
                     <div class="nav__menu__icon">
-                        <a id="myBtnSecond" href="#modal-card" class="menu__icon">
-                            <i class="fas fa-shopping-basket"></i>
-                            <span id="cart-badge" class="badge bg-dark"></span>
-                        </a>
+                        <a id="myBtnSecond" href="#modal-card" class="menu__icon"><i
+                                class="fas fa-shopping-basket"></i></a>
                         <a href="#" class="menu__icon"><i class="fas fa-heart"></i></a>
+                        <a href="./index.html" class="nav__link"><i class="fas fa-home"></i></a>
                     </div>
                 </div>
                 <div id="myModal" class="modal">
@@ -122,194 +123,150 @@
                         </form>
                     </div>
                 </div>
-                <!-- Modal Cart -->
-                <div id="myModal__cart" class="modal">
-                    <div class="modal__content">
-                        <span class="close__modal">&times;</span>
-                        <form class="modal__form" action="action_page.js">
-                            <div class="container ">
-                                <div class="modal__cart__text">
-                                    <h1 class="modal__cart__busket">Корзина</h1>
-                                    <hr>
-                                </div>
-                                <div class="modal__cart__container"></div>
-                                <div class="cart__sum"></div>
-                                    <div class="clearfix">
-                                        <button type="button" id="cancel__button__second"
-                                            class="cancelBtn info__button ">Отменить</button>
-                                        <button type="submit" class="signupbtn info__button">Купить</button>
-                                    </div>
+               <!-- Modal Cart -->
+               <div id="myModal__cart" class="modal">
+                <div class="modal__content">
+                    <span class="close__modal">&times;</span>
+                    <form class="modal__form" action="action_page.js">
+                        <div class="container ">
+                            <div class="modal__cart__text">
+                                <h1 class="modal__cart__busket">Корзина</h1>
+                                <hr>
                             </div>
-                        </form>
-                    </div>
+                            <div class="modal__cart__container"></div>
+                            <div class="cart__sum"></div>
+                                <div class="clearfix">
+                                    <button type="button" id="cancel__button__second"
+                                        class="cancelBtn info__button ">Отменить</button>
+                                    <button type="submit" class="signupbtn info__button">Купить</button>
+                                </div>
+                        </div>
+                    </form>
                 </div>
+            </div>
             </nav>
-            <div class="header__content">
-                <p class="header__content__title">Долго, дорого, богато!</p>
-                <a href="./products-list.html" class="header__button" target="_blank">каталог изделий</a>
-            </div>
-            <div class="header__brand__container">
-                <div class="header__brand"><img class="header__brand__logo" src="img/header/images/brand-header.png"
-                        alt="logo brand"></div>
-                <div class="header__brand"><img class="header__brand__logo" src="img/header/images/brand-header.png"
-                        alt="logo brand"></div>
-                <div class="header__brand"><img class="header__brand__logo" src="img/header/images/brand-header.png"
-                        alt="logo brand"></div>
-                <div class="header__brand"><img class="header__brand__logo" src="img/header/images/brand-header.png"
-                        alt="logo brand"></div>
-                <div class="header__brand"><img class="header__brand__logo" src="img/header/images/brand-header.png"
-                        alt="logo brand"></div>
-                <div class="header__brand" id="header__brand__last"><img class="header__brand__logo"
-                        src="img/header/images/brand-header.png" alt="logo brand"></div>
-            </div>
         </div>
-
     </header>
-    <div class="gallery__container">
+    <div class="product__container">
         <div class="container">
-            <div class="gallery__title">
-                <p class="gallery__title__text">К мероприятиям</p>
-            </div>
-            <div class="gallery__text__content">
-                <p class="gallery__content">Настоящая красота здесь!</p>
-            </div>
-            <div class="gallery__content__card__container">
-                <nav>
-                    <div class="gallery__nav__container nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                            aria-selected="true">Свадьба</button>
-                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Мужу</button>
-                        <button class="nav-link" id="nav-contact-tab-first" data-bs-toggle="tab"
-                            data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
-                            aria-selected="false">Жене</button>
-                        <button class="nav-link" id="nav-contact-tab-seccond" data-bs-toggle="tab"
-                            data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
-                            aria-selected="false">Партнеру</button>
-                        <button class="nav-link" id="nav-contact-tab-third" data-bs-toggle="tab"
-                            data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
-                            aria-selected="false">Коллекции</button>
-                        <button class="nav-link" id="nav-contact-tab-four" data-bs-toggle="tab"
-                            data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
-                            aria-selected="false">Редкость</button>
-                    </div>
-                </nav>
-                <div class="gallery__card__container tab-content" id="nav-tabContent">
-                    <div class="gallery__tab__container tab-pane fade show active" id="nav-home" role="tabpanel"
-                        aria-labelledby="nav-home-tab">
-                        <a href="#"><img class="gallery__card" src="img/gallery/ring-card-one.png" alt="ring"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/earrings-card-seccond.png"
-                                alt="earring"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/pendants-card-third.png"
-                                alt="pendants"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/cufflinks-card-fourth.png"
-                                alt="cufflinks"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/bracelets-card-fifth.png"
-                                alt="bracelets"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/watches-card-sixth.png"
-                                alt="watches"></a>
-                    </div>
-                    <div class="gallery__tab__container tab-pane fade" id="nav-profile" role="tabpanel"
-                        aria-labelledby="nav-profile-tab">
-                        <a href="#"><img class="gallery__card" src="img/gallery/watches-card-sixth.png" alt="ring"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/bracelets-card-fifth.png"
-                                alt="earring"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/cufflinks-card-fourth.png"
-                                alt="pendants"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/pendants-card-third.png"
-                                alt="cufflinks"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/earrings-card-seccond.png"
-                                alt="bracelets"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/ring-card-one.png" alt="watches"></a>
-                    </div>
-                    <div class="gallery__tab__container tab-pane fade" id="nav-contact" role="tabpanel"
-                        aria-labelledby="nav-contact-tab">
-                        <a href="#"><img class="gallery__card" src="img/gallery/watches-card-sixth.png" alt="ring"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/pendants-card-third.png"
-                                alt="earring"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/earrings-card-seccond.png"
-                                alt="pendants"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/bracelets-card-fifth.png"
-                                alt="cufflinks"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/cufflinks-card-fourth.png"
-                                alt="bracelets"></a>
-                        <a href="#"><img class="gallery__card" src="img/gallery/ring-card-one.png" alt="watches"></a>
-                    </div>
+            <div class="product__title__container">
+                <div class="product__title__inner">
+                    <a href="./index.html" class="product__inner__text">Главная</a>
+                    <p>/</p>
+                </div>
+                <div class="product__title__inner">
+                    <a href="./products-list.html" class="product__inner__text">Каталог</a>
+                    <p>/</p>
+                </div>
+                <div class="product__title__inner">
+                    <p class="product__inner__text">Подвеска Dolce & Gabanna</p>
                 </div>
             </div>
-        </div>
-        <div class="gallery__info__container">
-            <div class="container">
-                <div class="gallery__info__tittle">
-                    <p class="info__title">Не знаете, что выбрать?</p>
-                </div>
-                <div class="gallery__info__text">
-                    <p class="info__text">Посетите наши салоны в Киеве</p>
-                </div>
-                <div class="gallery__info__content">
-                    <p class="info__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor
-                        vitae pellentesque egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque.
-                        Suspendisse
-                        donec pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices
-                        imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum.</p>
-                </div>
-                <div class="gallery__info__button"><a href="./contact-page.html" class="info__button">наши салоны</a>
+            <div class="product__content__container"></div>
+            <div class="product__description__container">
+                <div class="content__info__container">
+                    <div class="info__text">
+                        <input class="input" type="checkbox" id="expanded">
+                        <p class="info__paragraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, lorem
+                            eu commodo
+                            porttitor erat. Amet mauris cursus bibendum in egestas. Nulla porttitor amet quam elit,
+                            mauris.
+                            Tortor egestas dignissim augue suspendisse rutrum pretium lobortis dolor. Commodo sagittis
+                            at amet
+                            faucibus faucibus id. Bibendum placerat convallis gravida eu quisque et augue. Sed dignissim
+                            amet ut
+                            vitae at ornare sed.
+                            Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu
+                            quisque et
+                            augue. Sed dignissim amet ut vitae at ornare sed.Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Amet, lorem eu commodo porttitor erat. Amet mauris cursus bibendum in egestas. Nulla
+                            porttitor
+                            amet quam elit, mauris. Tortor egestas dignissim augue suspendisse rutrum pretium lobortis
+                            dolor.
+                            Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu
+                            quisque et
+                            augue. Sed dignissim amet ut vitae at ornare sed.
+                            Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu
+                            quisque et
+                            augue. Sed dignissim amet ut vitae at ornare sed. Commodo sagittis at amet faucibus faucibus
+                            id.
+                            Bibendum placerat convallis gravida eu quisque et
+                            augue.</p>
+                        <label for="expanded" role="button">read more</label>
+                    </div>
+                    <div class="info__icon__container">
+                        <div class="icon__text">
+                            <img class="ifo__icon" src="img/product-list/icon/delivery-icon.png" alt="delivery bus">
+                            <p class="info__text__icon">Бесплатная
+                                доставка</p>
+                        </div>
+                        <div class="icon__text">
+                            <img class="ifo__icon" src="img/product-list/icon/list-icon.png" alt="list icon copybook">
+                            <p class="info__text__icon">Индивидуальный
+                                дизайн</p>
+                        </div>
+                        <div class="icon__text">
+                            <img class="ifo__icon" src="img/product-list/icon/ribbon-design-icon.png" alt="pen design">
+                            <p class="info__text__icon">Бесплатная
+                                примерка</p>
+                        </div>
+                        <div class="icon__text">
+                            <img class="ifo__icon" src="img/product-list/icon/jewelry-icon.png" alt="jewelry">
+                            <p class="info__text__icon">Личный
+                                подход</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="content__container">
+
+    <div class="product__album__container">
         <div class="container">
-            <div class="content__tittle__container">
-                <p class="content__title">Полезные статьи</p>
-            </div>
-            <div class="content__text__container">
-                <p class="content__text">Лучшие советы по подбору дорогих подарков</p>
-            </div>
-            <div class="content__card__container">
-                <div class="content__card">
-                    <img class="content__card__img" src="img/content/blog/card-one.png" alt="hand girls">
-                    <p class="content__card__text">Как выбрать
-                        часы для своей
-                        будущей жены</p>
+            <div class="album__container">
+                <div class="album__title__container">
+                    <p class="album__title">Мы подготовили для вас кое-что еще</p>
                 </div>
-                <div class="content__card">
-                    <img class="content__card__img" src="img/content/blog/card-seccond.png" alt="cufflinks">
-                    <p class="content__card__text">Запонки для мужа:
-                        7 ключевых правил
-                        покупки аксессуара</p>
+                <div class="album__subtitle__container">
+                    <p class="album__subtitle">Товары, которые могут Вам понравиться</p>
                 </div>
-                <div class="content__card">
-                    <img class="content__card__img" src="img/content/blog/card-third.png" alt="book">
-                    <p class="content__card__text">Как выбрать
-                        обручальные кольца
-                        молодоженам</p>
-                </div>
-            </div>
-            <div class="content__button__container"><button class="header__button">читать наш блог</button></div>
-            <div class="content__social__container">
-                <div class="content__social__tittle">
-                    <p class="social__tittle">#ojjo_jewerly</p>
-                </div>
-                <div class="content__social__text">
-                    <p class="social__text">Мы в социальных сетях</p>
-                </div>
-                <div class="content__social__card__container__first">
-                    <div class="social__card"><img src="img/content/social/img-video-card-first.png" alt="2 ring"></div>
-                    <div class="social__card"><img src="img/content/social/gallery-images-first.png" alt="glasses">
+                <div class="album__cards__container">
+                    <div class="album__card">
+                        <div class="album__card__images"><a href="/product-page.html"><img
+                                    src="img/product-page/img-album.png" alt="rings"></a></div>
+                        <div class="album__card__title">
+                            <p class="card__title">Подвеска</p>
+                        </div>
+                        <div class="album__card__subtitle">
+                            <p class="card__subtitle">Dolce & Gabanna</p>
+                        </div>
+                        <div class="album__card__button"><button class="album__button button__card">1 500 $</button>
+                        </div>
                     </div>
-                    <div class="social__card"><img src="img/content/social/gallery-image-seccond.png" alt="diamond">
+                    <div class="album__card">
+                        <div class="album__card__images"><a href="/product-page.html"><img
+                                    src="img/product-page/img-album.png" alt="rings"></a></div>
+                        <div class="album__card__title">
+                            <p class="card__title">Подвеска</p>
+                        </div>
+                        <div class="album__card__subtitle">
+                            <p class="card__subtitle">Dolce & Gabanna</p>
+                        </div>
+                        <div class="album__card__button"><button class="album__button button__card">1 500 $</button>
+                        </div>
                     </div>
-                </div>
-                <div class="content__social__card__container__second">
-                    <div class="social__card" id="social__card__first"><img
-                            src="img/content/social/gallery-image-third.png" alt="ring in box">
-                    </div>
-                    <div class="social__card" id="social__card__second"><img
-                            src="img/content/social/gallery-image-fourth.png" alt="clock"></div>
-                    <div class="social__card" id="social__card__third"><img
-                            src="img/content/social/img-video-card-seccond.png" alt="hands girls">
+                    <div class="album__card">
+                        <div class="album__card__images"><a href="/product-page.html"><img
+                                    src="img/product-page/img-album.png" alt="rings"></a></div>
+                        <div class="album__card__title">
+                            <p class="card__title">Подвеска</p>
+                        </div>
+                        <div class="album__card__subtitle">
+                            <p class="card__subtitle">Dolce & Gabanna</p>
+                        </div>
+                        <div class="album__card__button"><button class="album__button button__card">1 500 $</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -409,6 +366,8 @@
         </div>
     </div>
     <script src="js/index.js"></script>
+    <script src="js/product-page.js"></script>
+    <script src="js/product-page-carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
