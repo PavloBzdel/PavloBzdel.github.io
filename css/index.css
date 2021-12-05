@@ -180,6 +180,9 @@ body{
     display: flex;
     align-items: center;
 }
+.burger__icon{
+    font-size: 30px;
+}
 .menu__icon{
     color: var(--white-color);
     padding-right: 15px;

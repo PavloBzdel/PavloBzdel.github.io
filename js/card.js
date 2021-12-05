@@ -2,6 +2,7 @@
 
     let modal = document.getElementById("myModal__cart");
     let btn = document.getElementById("myBtnSecond");
+    let btnThird = document.getElementById("myBtn__third")
     let span = document.getElementsByClassName("close__modal")[0];
     let form = document.getElementsByClassName("cancelBtn")[0];
   
@@ -9,6 +10,9 @@
     modal.style.display = "block";
     }
   
+    btnThird.onclick = function() {
+        modal.style.display = "block";
+        }
   
     span.onclick = function() {
     modal.style.display = "none";

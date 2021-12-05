@@ -27,6 +27,7 @@
 
   let modal = document.getElementById("myModal");
   let btn = document.getElementById("myBtn");
+  let btn1 = document.getElementById("myBtn__second")
   let span = document.getElementsByClassName("close__modal__form")[0];
 
 
@@ -34,7 +35,9 @@
   modal.style.display = "block";
   }
 
-
+  btn1.onclick = function() {
+    modal.style.display = "block";
+  }
   span.onclick = function() {
   modal.style.display = "none";
   }
