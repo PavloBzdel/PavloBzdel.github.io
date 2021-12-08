@@ -197,7 +197,7 @@ font-family: 'Roboto Condensed', sans-serif; */
         margin-left: 20px;
     }
     .content__photo__max{
-        margin-left: 7px;
+        margin-left: 25px;
     }
     .active__img{
         width: 100%;
@@ -271,7 +271,7 @@ font-family: 'Roboto Condensed', sans-serif; */
         padding-left: 40px;
     }
     .content__photo__min{
-        margin-right: 40px;
+        margin-right: 15px;
     }
     .active__img{
         width: 500px;
