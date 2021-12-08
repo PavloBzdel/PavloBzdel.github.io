@@ -3,9 +3,9 @@
     const product = JSON.parse(localStorage.product);
     
     const slides = [
-        `<div><img src="${product.imagesB}" alt="${product.brand}"></div>`,
-        `<div><img src="${product.imagesBS}" alt="${product.brand}"></div>`,
-        `<div><img src="${product.imagesBT}" alt="${product.brand}"></div>`
+        `<div class="images__carousel"><img src="${product.imagesB}" alt="${product.brand}"></div>`,
+        `<div class="images__carousel"><img src="${product.imagesBS}" alt="${product.brand}"></div>`,
+        `<div class="images__carousel"><img src="${product.imagesBT}" alt="${product.brand}"></div>`
     ]; 
     
     let smallImg = document.querySelectorAll(".carousel__images__min");
