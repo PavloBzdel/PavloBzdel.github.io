@@ -105,12 +105,6 @@ font-family: 'Roboto Condensed', sans-serif; */
 .content__info__container{
     padding: 150px 0;
 }
-
-.images__product__list{
-    width: 270px;
-    height: 400px; 
-    object-fit: fill;
-  }
 /* media */
 @media(min-width: 341px) {
     #drop__down__container{
