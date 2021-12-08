@@ -146,6 +146,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 .content__big__arrow{
     cursor: pointer;
+    margin-left: 5px;
 }
 .active-arrow{
     box-shadow: 5px 5px 5px var(--hoverText-color);

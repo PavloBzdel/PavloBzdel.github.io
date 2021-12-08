@@ -46,7 +46,6 @@
             smallImg[currentSlide].classList.add("active-arrow");
         }
     }
-    
     document.querySelector('.content__photo__max .next__arrow').addEventListener('click', nextSlide);
     document.querySelector('.content__photo__max .prev__arrow').addEventListener('click', prevSlide);
     showCurrentSlide();
