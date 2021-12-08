@@ -6,7 +6,7 @@ font-family: 'Roboto Condensed', sans-serif; */
     --gray-color: #333333;
     --hoverText-color: #868686;
     --blue-color: rgb(25, 140, 255);
-    --blue-color-hover: rgb(0, 117, 235);
+    --blue-color-hover: rgb(0, 117, 235); 
 }
 *{
     box-sizing: border-box;
@@ -283,8 +283,8 @@ body{
         margin-left: 25px;
     }
     .modal__cart__container{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
     }
     .modal__cart__border{
         display: flex;
@@ -400,6 +400,11 @@ body{
     .modal__form__label__container{
         justify-content: center;
     }
+    .modal__cart__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+    }
 }
 @media(max-width: 1024px) {
     .nav__link__container{
@@ -499,6 +504,12 @@ body{
    }
    .form__input{
     padding-bottom: 0;
+    }
+    .modal__cart__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-self: center;
+        margin: auto;
     }
 }
 

@@ -35,7 +35,7 @@
         const productsContainer = document.querySelector(".modal__cart__container")
             for ( const product of products){
                 productsContainer.innerHTML += `
-                <div class="modal__cart__container">
+                <div class="modal__cart__container_second">
                     <div class="modal__cart__border content__cart">
                         <div class="cart__img"><a href="/product-page.html" class="product__list__button"><img class="images__product__list" data-id="${product.id}" src="${product.imagesS}" alt="${product.brand}"></a></div>
                         <div class="cart__title">${product.accessorize}</div>
